@@ -76,6 +76,10 @@
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <h3>Фильтр</h3>
         <form class="catalog-filter" action="https://htmlacademy.ru/" method="get">
+           <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title"> Стоимость</legend>
+            <input type="field">
+           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
@@ -109,9 +113,99 @@
           </fieldset>
           <button type="submit" class="button">Показать</button>
         </form>
-
+        <h3>Сортировка</h3>
+        <select class="select-control">
+          <option value="popular">Популярные</option>
+          <option value="cheap">Дешевые</option>
+          <option value="expensive">Дорогие</option>
+        </select>
+        <button class="sort-item" type="button">sort up</button>
+        <button class="sort-item" type="button">sort down</button>
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="Любительская селфи палка">
+              <h4 class><b>Любительская селфи палка</b></h4>
+              <p>500р</p>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="Проффесиональная селфи палка">
+              <h4 class><b>Проффесиональная селфи палка</b></h4>
+              <p>1 500р</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="Непотопляемая селфи палка">
+              <h4 class><b>Непотопляемая селфи палка</b></h4>
+              <p>2 500р</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="Селфи палка &#8243 Следуй за мной &#8243">
+              <h4 class><b>Селфи палка &#8243 Следуй за мной &#8243</b></h4>
+              <p>1 500р</p>
+            </a>
+          </li>
+        </ul>
+        <form class="product-card-download" action="#" method="get">
+          <button type="button">Загрузить еще</button>
+        </form>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">Назад</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">Вперед</a>
+          </li>
+        </ul>
       </section>
-
     </main>
+    <footer class="page-footer">
+      <section class="footer-logo-adress">
+        <ul class="footer-logo">
+          <li> <img class="img-footer-logo-triangle" src="#" alt="Лого треугольник"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого D"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого E"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого V"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого I"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого C"></li>
+          <li> <img class="img-footer-logo" src="#" alt="Лого E"></li>
+        </ul>
+        <p>Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.</p>
+          <img src="№">
+        </section>
+        <section class="footer-services">
+          <ul class="footer-services-list">
+            <li class="footer-services-list-item"><a href="#">Доставка</a></li>
+            <li class="footer-services-list-item"><a href="#">Гарантия</a></li>
+            <li class="footer-services-list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-list-item"><a class="button" href="https://t.me/htmlacademy"><span class="visually-hiden">Телеграм</span></a></li>
+            <li class="footer-social-list-item"><a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hiden">Ютуб</span></a></li>
+            <li class="footer-social-list-item"><a class="button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hiden">Твиттер</span></a></li>
+          </ul>
+        </section>
+        <section class="tel-logo-html">
+          <p>Тел.: +7 (812) 812-12-12</p>
+          <img src="#">
+        </section>
+      </footer>
   </body>
 </html>
