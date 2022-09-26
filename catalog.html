@@ -5,6 +5,113 @@
     <title>Каталог магазина</title>
   </head>
   <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Каталог магазина</h1>
+      <nav class="navigation">
+        <ul class="navigation-logo">
+          <li> <img class="img-navigation-logo-triangle" src="#" alt="Лого треугольник"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого D"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого E"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого V"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого I"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого C"></li>
+          <li> <img class="img-navigation-logo" src="#" alt="Лого E"></li>
+        </ul>
+        <ul class="navigation-list navigation-user-menu">
+          <li class="navigation-user-menu-item">
+            <form class="navigation-form-search" action="#" method="get">
+            <img src="#">
+            <p><input type="search" name="search" placeholder="Текст поиска"></p>
+            <button class="button-search" type="submit">Найти</button>
+          </form>
+          </li>
+          <li class="navigation-user-menu-item"> <img src="#">
+          </li>
+          <li class="navigation-user-menu-item">
+            <a class="button-navigation-link" href="#">Войти</a>
+          </li>
+          <li class="navigation-user-menu-item">
+            <a class="button-navigation-link" href="#">Выйти</a>
+          </li>
+          <li class="navigation-user-menu-item"> <img src="#">
+          </li>
+          <li class="navigation-user-menu-item">
+            <a class="button-navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-user-menu-item"> <img src="#">
+          </li>
+          <li class="navigation-user-menu-item">
+             <a class="button-navigation-link" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <p>Каталог товаров</p>
+            <button type="button"> <img src="#"> </button>
+            </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-catalog">
+      <section class="breadcrumbs">
+        <p><b>Моноподы для селфи</b></p>
+        <ol class="breadcrumbs-list">
+          <li class="breadcrumbs-list-item"> <a href="index.html">Главная</a></li>
+          <li> <img src="#"> </li>
+          <li class="breadcrumbs-list-item"> <a href="catalog.html">Каталог товаров</a></li>
+          <li> <img src="#"> </li>
+          <li class="breadcrumbs-list-item"> <a href="#">Моноподы для селфи</a></li>
+        </ol>
+      </section>
+      <section class="catalog-products-filter">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h3>Фильтр</h3>
+        <form class="catalog-filter" action="https://htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+            <li><label class="control">
+              <input class="control-input" type="checkbox" name="black" checked>
+              Черный </label> </li>
+            <li><label class="control">
+              <input class="control-input" type="checkbox" name="white" checked>
+              Белый </label> </li>
+            <li><label class="control">
+              <input class="control-input" type="checkbox" name="blue">
+              Синий </label> </li>
+            <li><label class="control">
+              <input class="control-input" type="checkbox" name="red">
+              Красный </label> </li>
+            <li><label class="control">
+              <input class="control-input" type="checkbox" name="pink">
+              Розовый</label> </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li> <label class="control">
+                <input class="control-input" type="radio" name="Bluetooth-group" value="yes" checked>Есть</label>
+              </li>
+              <li> <label class="control">
+                <input class="control-input" type="radio" name="Bluetooth-group" value="no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button">Показать</button>
+        </form>
 
+      </section>
+
+    </main>
   </body>
 </html>
