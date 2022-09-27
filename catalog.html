@@ -6,21 +6,12 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Каталог магазина</h1>
-      <nav class="navigation">
-        <ul class="navigation-logo">
-          <li> <img class="img-navigation-logo-triangle" src="#" alt="Лого треугольник"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого D"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого E"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого V"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого I"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого C"></li>
-          <li> <img class="img-navigation-logo" src="#" alt="Лого E"></li>
-        </ul>
+       <section class="navigation-user-menu">
+        <a href="#" class="img-header-logo"> <img alt="Лого"> </a>
         <ul class="navigation-list navigation-user-menu">
           <li class="navigation-user-menu-item">
-            <form class="navigation-form-search" action="#" method="get">
-            <p><input type="search" name="search" placeholder="Текст поиска"></p>
+          <form class="navigation-form-search" action="#" method="get">
+            <input type="search" name="search" placeholder="Поиск по сайту">
             <button class="button-search" type="submit">Найти</button>
           </form>
           </li>
@@ -37,10 +28,12 @@
              <a class="button-navigation-link" href="#">Корзина</a>
           </li>
         </ul>
+         </section>
+         <nav>
         <ul class="navigation-list">
           <li class="navigation-item">
             <p>Каталог товаров</p>
-            <button type="button"> <img alt="#"> </button>
+            <button type="button-navigation-link"> <img alt="Иконка плюс"> </button>
             </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -57,11 +50,11 @@
     <main class="main-catalog">
       <section class="breadcrumbs">
         <p><b>Моноподы для селфи</b></p>
-        <ol class="breadcrumbs-list">
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-list-item"> <a href="index.html">Главная</a></li>
           <li class="breadcrumbs-list-item"> <a href="catalog.html">Каталог товаров</a></li>
           <li class="breadcrumbs-list-item"> <a href="#">Моноподы для селфи</a></li>
-        </ol>
+        </ul>
       </section>
       <section class="catalog-products-filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
