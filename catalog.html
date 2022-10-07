@@ -34,7 +34,7 @@
       <nav>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <button type="button">Кнопка плюс</button>
           </li>
           <li class="navigation-item">
@@ -51,16 +51,17 @@
     </header>
     <main class="main-catalog">
       <section class="breadcrumbs">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="breadcrumbs-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-list-item"> <a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-list-item"> <a href="catalog.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-list-item"> <a href="#">Моноподы для селфи</a></li>
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#">Моноподы для селфи</a></li>
         </ul>
       </section>
       <section class="catalog-products-filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <h3>Фильтр</h3>
+        <h3 class="filter-group-header">Фильтр</h3>
         <form class="catalog-filter" action="https://htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title"> Стоимость</legend>
@@ -97,9 +98,9 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="button">Показать</button>
+          <button type="submit" class="catalog-filter-button">Показать</button>
         </form>
-        <h3>Сортировка</h3>
+        <h3 class="filter-group-header">Сортировка</h3>
         <select class="select-control">
           <option value="popular">Популярные</option>
           <option value="cheap">Дешевые</option>
@@ -107,66 +108,68 @@
         </select>
         <a href="#" class="sort-item-button">sort up</a>
         <a href="#" class="sort-item-button">sort down</a>
-        <ul class="product-list">
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/catalog/product/amateur-selfie-stick.jpg" width="360"
-                height="380" alt="Любительская селфи палка">
-              <h4 class><b>Любительская селфи палка</b></h4>
-              <p>500р</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/catalog/product/professional-selfie-stick.jpg" width="360"
-                height="380" alt="Проффесиональная селфи палка">
-              <h4 class><b>Проффесиональная селфи палка</b></h4>
-              <p>1 500р</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/catalog/product/unsinkable-selfie-stick.jpg" width="360"
-                height="380" alt="Непотопляемая селфи палка">
-              <h4 class><b>Непотопляемая селфи палка</b></h4>
-              <p>2 500р</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/catalog/product/selfie-stick-follow-me.jpg" width="360"
-                height="380" alt="Селфи палка &#8243; Следуй за мной &#8243;">
-              <h4 class><b>Селфи палка &#8243; Следуй за мной &#8243; </b></h4>
-              <p>1 500р</p>
-            </a>
-          </li>
-        </ul>
-        <form class="product-card-download" action="#" method="get">
-          <button type="button">Загрузить еще</button>
-        </form>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">Назад</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">Вперед</a>
-          </li>
-        </ul>
+        <div class="product-list-window">
+          <ul class="product-list">
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-img" src="images/catalog/product/amateur-selfie-stick.jpg" width="360"
+                  height="380" alt="Любительская селфи палка">
+                <h4 class="card-img-header">Любительская селфи-палка</h4>
+                <p class="card-img-price">500р</p>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-img" src="images/catalog/product/professional-selfie-stick.jpg" width="360"
+                  height="380" alt="Проффесиональная селфи палка">
+                <h4 class="card-img-header">Проффесиональная селфи-палка</h4>
+                <p class="card-img-price">1 500р</p>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-img" src="images/catalog/product/unsinkable-selfie-stick.jpg" width="360"
+                  height="380" alt="Непотопляемая селфи палка">
+                <h4 class="card-img-header">Непотопляемая селфи-палка</h4>
+                <p class="card-img-price">2 500р</p>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-img" src="images/catalog/product/selfie-stick-follow-me.jpg" width="360"
+                  height="380" alt="Селфи палка &#8243; Следуй за мной &#8243;">
+                <h4 class="card-img-header">Селфи-палка &#8243; Следуй за мной &#8243; </h4>
+                <p class="card-img-price">1 500р</p>
+              </a>
+            </li>
+          </ul>
+          <form class="product-card-download" action="#" method="get">
+            <button type="button" class="product-card-download-button">Загрузить еще</button>
+          </form>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev" href="#">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">Вперед</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -178,14 +181,14 @@
               fill="#FFC700" />
           </svg>
         </a>
-        <p>Санкт-Петербург, набережная
+        <p class="footer-address">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
       </section>
       <section class="footer-services">
         <ul class="footer-services-list">
-          <li class="footer-services-list-item"><a href="#">Доставка</a></li>
-          <li class="footer-services-list-item"><a href="#">Гарантия</a></li>
-          <li class="footer-services-list-item"><a href="#">Контакты</a></li>
+          <li class="footer-services-list-item"><a class="footer-services-link" href="#">Доставка</a></li>
+          <li class="footer-services-list-item"><a class="footer-services-link" href="#">Гарантия</a></li>
+          <li class="footer-services-list-item"><a class="footer-services-link" href="#">Контакты</a></li>
         </ul>
       </section>
       <section class="footer-social">
@@ -238,7 +241,7 @@
         </ul>
       </section>
       <section class="tel-logo-html">
-        <a href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-tel" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="button-logo-html" href="https://htmlacademy.ru/">
           <svg width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
