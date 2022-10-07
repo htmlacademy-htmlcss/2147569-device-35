@@ -37,8 +37,6 @@ body {
 }
 
 .button-user-menu-link {
-  font-size: 18px;
-  line-height: 30px;
   text-decoration: none;
   color: inherit;
 }
@@ -82,8 +80,6 @@ body {
 }
 
 .product-description {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -147,8 +143,6 @@ text-align: left;
   text-align: left;
 }
 .services-header-delivery-description {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -190,8 +184,6 @@ text-align: left;
 }
 
 .about-paragraph {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -229,8 +221,6 @@ text-align: left;
 }
 
 .contacts-paragraph {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -244,15 +234,11 @@ text-align: left;
 }
 
 .contacts-address {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
 
 .contacts-tel {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -265,8 +251,6 @@ text-align: left;
   text-align: left;
 }
 .contacts-time {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
@@ -292,8 +276,6 @@ text-align: left;
 }
 
 .subscribe-item {
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   text-align: left;
 }
