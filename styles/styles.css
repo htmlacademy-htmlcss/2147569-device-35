@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url(../fonts/raleway/raleway-800.woff2) format(woff2);
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/rubik/rubik-400.woff2) format(woff2);
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/rubik/rubik-700.woff2) format(woff2);
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -64,14 +64,14 @@ body {
   margin-top: 40px;
 }
 
-.slaider-product-number {
+.slider-product-number {
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
 }
 
-.slaider-header {
+.slider-header {
   font-family: "Raleway",sans-serif;
   font-weight: 800;
   font-size: 50px;
