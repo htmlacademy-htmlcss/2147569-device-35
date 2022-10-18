@@ -49,34 +49,61 @@ body {
   height: 300px;
 }
 
-.header-user-menu {
+.header-container {
   width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  bottom: 20px;
+}
+
+.img-header-logo {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.header-user-menu {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.user-menu-form-search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-user-menu-search {
+  width: 319px;
 }
 
 .header-search {
   width: 517px;
+  margin-right: 26px;
+}
+
+.button-user-menu-item {
+  text-align: end;
 }
 
 .button-user-menu-input {
-  width: 231px;
+  width: 81px;
+  margin-right: 176px;
 }
 
 .button-user-menu-compare {
   width: 105px;
-  margin-left: auto;
+  margin-right: 18px;
 }
 
 .button-user-basket {
-  width: 99px;
+  width: 117px;
 }
 
 .button-search {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
+  width: 160px;
 }
 
 .header-login-compare-basket {
@@ -84,6 +111,8 @@ body {
   width: 497px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .button-user-menu-link {
@@ -92,24 +121,37 @@ body {
 }
 
 .navigation-header {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 1040px;
-  height: 50px;
 }
 
 .navigation-link-catalog {
-  width: 236px;
+  width: 293px;
+  margin-right: 276px;
+}
+
+.navigation-catalog-button {
+  width: 50px;
+  height: 50px;
 }
 
 .navigation-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 471px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigation-link-services {
+  margin-right: 45px;
+  width: 127px;
+
+}
+
+.navigation-link-services:nth-child(3n) {
+  margin-right: 0;
 }
 
 .navigation-link {
@@ -121,6 +163,7 @@ body {
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+  width: 236px;
 }
 
 .main-container {
@@ -130,10 +173,40 @@ body {
 .slider {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -140px;
+}
+
+.slider-container-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 150px;
+}
+
+.container-image-button {
+ display: flex;
+ justify-content: space-between;
+ width: 530px;
+ margin-left: auto;
+ position: relative;
+ bottom: 350px;
+}
+
+.slider-image-prev-button {
+  width: 20px;
+  height: 60px;
+}
+
+.slider-image-next-button {
+  width: 20px;
+  height: 60px;
 }
 
 .slider-product-description {
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .slider-product-number {
@@ -141,6 +214,19 @@ body {
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
+  margin: 0;
+  position: relative;
+  margin-left: auto;
+  bottom: 70px;
+  right: 50px;
+}
+
+.slider-product-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  bottom: 59px;
 }
 
 .slider-header {
@@ -149,11 +235,15 @@ body {
   font-size: 50px;
   line-height: 50px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .product-description {
   color: #444444;
   text-align: left;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .button-slider-description {
@@ -164,12 +254,30 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 220px;
+  height: 40px;
+  margin-bottom: 50px;
+}
+
+.slider-product-feature-value-container {
+  display: flex;
+  justify-content: space-between;
+  width: 307px;
+  margin-bottom: 108px;
+}
+
+.slider-product-feature-value-container-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70px;
 }
 
 .slider-product-value {
   font-size: 36px;
   line-height: 30px;
   text-align: left;
+  margin: 0;
 }
 
 .slider-product-feature {
@@ -177,6 +285,7 @@ body {
   line-height: 30px;
   color: #444444;
   text-align: left;
+  margin: 0;
 }
 
 .categories-products-list {
@@ -525,11 +634,13 @@ body {
 
 .button-user-menu-login {
   width: 146px;
+  margin-right: 28px;
 }
 
 .button-user-menu-output {
   width: 56px;
   opacity: 0.3;
+  margin-right: 27px;
 }
 
 .header-catalog {
