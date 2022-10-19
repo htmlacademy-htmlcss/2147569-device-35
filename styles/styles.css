@@ -118,6 +118,7 @@ body {
 .button-user-menu-link {
   text-decoration: none;
   color: inherit;
+  padding: 5px 4px 5px 20px;
 }
 
 .navigation-header {
@@ -164,6 +165,7 @@ body {
   color: inherit;
   text-decoration: none;
   width: 236px;
+  padding: 15px 0;
 }
 
 .main-container {
@@ -288,16 +290,39 @@ body {
   margin: 0;
 }
 
-.categories-products-list {
-  list-style: none;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+.categories-products {
+  margin-bottom: 172px;
 }
 
-.product-item-link {
+.categories-products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories-products-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 160px;
+  height: 253px;
+}
+
+.products-item-logo {
+  width: 160px;
+  height: 160px;
+  background-color: #ffe17f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-logo-link-monopods {
+  margin-top: 52px;
+
+}
+
+.product-link {
   font-family: "Raleway", Tahoma, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -306,6 +331,8 @@ body {
   letter-spacing: -0.02em;
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 35px 5px 10px;
 }
 
 .button-services-item {
@@ -317,6 +344,8 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 160px;
+  padding: 5px 0;
 }
 
 .services-header-delivery {
@@ -326,11 +355,20 @@ body {
   font-size: 50px;
   line-height: 50px;
   text-align: left;
+  margin: 0;
 }
 
 .services-header-delivery-description {
   color: #444444;
   text-align: left;
+  margin: 0;
+}
+
+.header-description-logo {
+  width: 694px;
+  height: 174px;
+  position: relative;
+  bottom: 28px;
 }
 
 .services {
@@ -344,7 +382,7 @@ body {
 .services-container {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .button-services {
@@ -352,10 +390,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 116px;
+  position: relative;
+  bottom: 35px;
+}
+
+.button-services-item-delivery {
+  width: 280px;
 }
 
 .services-header-description {
   width: 452px;
+  height: 174px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .button-delivery-block {
@@ -372,26 +421,46 @@ body {
 
 .delivery-block {
   background-color: #f0f0f0;
-  height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.delivery-block-logo {
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+}
+
+.delivery-block-logo-strong {
+  width: 125px;
+  height: 100px;
+}
+
+.delivery-block-header {
+  padding: 40px 125px;
+  height: 20px;
+  margin: 0;
 }
 
 .about-contacts-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .about-us {
   width: 520px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .about-list-delivery {
   margin: 0;
   padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
 }
 
 .contacts {
@@ -407,16 +476,15 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  text-align: left;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
 }
 
 .about-paragraph {
   color: #444444;
-  text-align: left;
-}
-
-.about-list-delivery {
-  list-style: none;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .about-list-delivery-link {
@@ -437,6 +505,8 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  height: 40px;
+  width: 270px;
 }
 
 .contacts-header {
@@ -445,12 +515,15 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  text-align: left;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
 }
 
 .contacts-paragraph {
   color: #444444;
-  text-align: left;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-header-subtitle {
@@ -458,17 +531,19 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #444444;
-  text-align: left;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts-address {
   color: #444444;
-  text-align: left;
+  margin: 0;
 }
 
 .contacts-tel {
   color: #444444;
-  text-align: left;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-header-subtitle-time {
@@ -476,12 +551,17 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #444444;
-  text-align: left;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts-time {
   color: #444444;
-  text-align: left;
+  margin: 0;
+}
+
+.time-weekends {
+  margin-bottom: 30px;
 }
 
 .contacts-button {
@@ -493,12 +573,15 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 259px;
+  height: 40px;
 }
 
 .subscribe-newsletter-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .newsletter-header-paragraph {
@@ -512,19 +595,25 @@ body {
 
 .newsletter-paragraph {
   width: 560px;
+  margin: 0;
+  margin-top: 74px;
+  margin-bottom: 144px;
 }
 
 .newsletter-email-chek {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .newsletter-form {
   width: 810px;
+  margin-bottom: 56px;
+  margin-right: 188px;
 }
 
 .newsletter-chek {
   width: 128px;
+  margin-bottom: 70px;
 }
 
 .subscribe-newsletter-header {
@@ -533,8 +622,11 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  text-align: left;
   width: 348px;
+  margin: 0;
+  margin-top: 64px;
+  margin-right: 252px;
+  margin-bottom: 144px;
 }
 
 .subscribe-item {
@@ -551,6 +643,13 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 253px;
+  height: 57px;
+}
+
+.field {
+  width: 540px;
+  height: 55px;
 }
 
 .subscribe-newsletter {
@@ -565,9 +664,16 @@ body {
 
 .footer-logo-address {
   width: 239px;
+  height: 182px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-top: 62px;
+  margin-bottom: 77px;
+}
+
+.img-header-footer {
+  margin-bottom: 35px;
 }
 
 .footer-services-social {
@@ -575,6 +681,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 137px;
+  margin-bottom: 61px;
 }
 
 .footer-social {
@@ -587,6 +695,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tel-logo-html {
@@ -594,6 +703,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 140px;
+  margin-bottom: 65px;
+}
+
+.button-logo-html {
+  margin-left: 60px;
 }
 
 .footer-address {
@@ -601,6 +716,7 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-align: left;
+  margin: 0;
 }
 
 .footer-services-list, .footer-social-list  {
