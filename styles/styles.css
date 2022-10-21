@@ -69,17 +69,14 @@ body {
 }
 
 .user-menu-form-search {
+  width: 517px;
+  margin-right: 26px;
   display: flex;
   justify-content: flex-end;
 }
 
 .input-user-menu-search {
   width: 319px;
-}
-
-.header-search {
-  width: 517px;
-  margin-right: 26px;
 }
 
 .button-user-menu-item {
@@ -118,7 +115,6 @@ body {
 .button-user-menu-link {
   text-decoration: none;
   color: inherit;
-  padding: 5px 4px 5px 20px;
 }
 
 .navigation-header {
@@ -186,12 +182,12 @@ body {
 }
 
 .container-image-button {
- display: flex;
- justify-content: space-between;
- width: 530px;
- margin-left: auto;
- position: relative;
- bottom: 350px;
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+  margin-left: auto;
+  position: relative;
+  bottom: 350px;
 }
 
 .slider-image-prev-button {
@@ -332,7 +328,7 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 35px 5px 10px;
+  padding: 35px 0 10px;
 }
 
 .button-services-item {
@@ -606,7 +602,7 @@ body {
 }
 
 .newsletter-form {
-  width: 810px;
+  width: 815px;
   margin-bottom: 56px;
   margin-right: 188px;
 }
@@ -647,9 +643,11 @@ body {
   height: 57px;
 }
 
-.field {
-  width: 540px;
+.newsletter-form-field {
+  width: 557px;
   height: 55px;
+  padding: 0;
+  border-width: 0;
 }
 
 .subscribe-newsletter {
@@ -768,6 +766,10 @@ body {
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 34px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .breadcrumbs-header {
@@ -875,7 +877,7 @@ body {
 
 .filter-container {
   width: 320px;
-  padding: 25px 60px 0;
+  padding: 25px 40px 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -893,9 +895,17 @@ body {
 
 .product-list {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: 360px 360px;
+  row-gap: 44px;
+  column-gap: 40px;
   margin-bottom: 44px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 452px;
 }
 
 .product-card-link {
@@ -908,8 +918,13 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
-  text-align: left;
-  display: inline;
+  margin: 0;
+}
+
+.product-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .card-img-price {
