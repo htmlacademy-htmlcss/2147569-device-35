@@ -291,15 +291,15 @@ body {
 }
 
 .categories-products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .categories-products-list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 160px;
   height: 253px;
 }
@@ -311,10 +311,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 32px;
+}
+
+.products-item-header {
+  font-size: inherit;
 }
 
 .item-logo-link-monopods {
-  margin-top: 52px;
+  margin-top: 43px;
 
 }
 
@@ -327,8 +332,6 @@ body {
   letter-spacing: -0.02em;
   text-decoration: none;
   color: inherit;
-  display: block;
-  padding: 35px 0 10px;
 }
 
 .button-services-item {
