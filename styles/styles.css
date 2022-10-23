@@ -921,11 +921,14 @@ body {
   margin: 0;
 }
 
+.product-card-img {
+  margin-bottom: 6px;
+}
+
 .product-card-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 6px;
 }
 
 .card-img-price {
