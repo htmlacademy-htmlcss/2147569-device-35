@@ -20,12 +20,10 @@
           </svg>
         </a>
         <section class="header-user-menu">
-          <div class="header-search">
-            <form class="user-menu-form-search" action="#" method="get">
-              <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
-              <button class="button-search" type="submit">Найти</button>
-            </form>
-          </div>
+          <form class="user-menu-form-search" action="#" method="get">
+            <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
+          </form>
           <ul class="header-login-compare-basket">
             <li class="button-user-menu-item button-user-menu-input"><a class="button-user-menu-link" href="#">Войти</a>
             </li>
@@ -88,53 +86,59 @@
       </div>
       <section class="categories-products container">
         <h2 class="visually-hidden">Список категорий товаров</h2>
-        <div class="categories-products-list">
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-virtualreality.svg"
-                  alt="Виртуальная реальность"></a>
-            </div>
-            <a class="product-link" href="#"> Виртуальная реальность</a>
-          </div>
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-monopods.svg" alt="Моноподы для селфи"
-                  class="item-logo-link-monopods"></a>
-            </div>
-            <a class="product-link" href="#">Моноподы для селфи</a>
-          </div>
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-actioncamera.svg" alt="Экшн-камеры"></a>
-            </div>
-            <a class="product-link" href="#"> Экшн-камеры</a>
-          </div>
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-fitnessbracelet.svg"
-                  alt="Фитнес-браслеты"></a>
-            </div>
-            <a class="product-link" href="#"> Фитнес-браслеты</a>
-          </div>
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-smartwatch.svg" alt="Умные часы"></a>
-            </div>
-            <a class="product-link" href="#"> Умные часы</a>
-          </div>
-          <div class="categories-products-list-item">
-            <div class="products-item-logo">
-              <a class="product-link-logo" href="#"><img
-                  src="images/index/categories-products/categories-products-quadrocopters.svg" alt="Квадрокоптеры"></a>
-            </div>
-            <a class="product-link" href="#"> Квадрокоптеры</a>
-          </div>
-        </div>
+        <ul class="categories-products-list">
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-virtualreality.svg"
+                  alt="Виртуальная реальность">
+              </div>
+              <h3 class="products-item-header">Виртуальная реальность</h3>
+            </a>
+          </li>
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-monopods.svg" alt="Моноподы для селфи"
+                  class="item-logo-link-monopods">
+              </div>
+              <h3 class="products-item-header">Моноподы<br>для селфи</h3>
+            </a>
+          </li>
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-actioncamera.svg" alt="Экшн-камеры">
+              </div>
+              <h3 class="products-item-header">Экшн-камеры</h3>
+            </a>
+          </li>
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-fitnessbracelet.svg"
+                  alt="Фитнес-браслеты">
+              </div>
+              <h3 class="products-item-header">Фитнес-браслеты</h3>
+            </a>
+          </li>
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-smartwatch.svg" alt="Умные часы">
+              </div>
+              <h3 class="products-item-header">Умные часы</h3>
+            </a>
+          </li>
+          <li class="categories-products-list-item">
+            <a class="product-link" href="#">
+              <div class="products-item-logo">
+                <img src="images/index/categories-products/categories-products-quadrocopters.svg" alt="Квадрокоптеры">
+              </div>
+              <h3 class="products-item-header">Квадрокоптеры</h3>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="services">
         <div class="services-container container">
@@ -202,7 +206,8 @@
           </div>
           <div class="newsletter-email-chek container">
             <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
-              <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
+              <input class="newsletter-form-field" type="email" name="newsletter-email" placeholder="Ваш e-mail"
+                required>
               <button class="button-newsletter" type="submit">Подписаться</button>
             </form>
             <p class="subscribe-item newsletter-chek">Это бесплатно</p>
