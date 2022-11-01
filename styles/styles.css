@@ -1362,6 +1362,19 @@ body {
   text-align: left;
 }
 
+.breadcrumbs-list-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-list-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-list-link:focus-visible {
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
+}
+
 .filter-group-header {
   font-family: "Raleway", Tahoma, sans-serif;
   font-style: normal;
@@ -1399,10 +1412,22 @@ body {
 }
 
 .select-control {
-  margin-right: auto;
+  margin-right: 206px;
   width: 141px;
   height: 30px;
   margin-top: 6px;
+}
+
+.sorting {
+  width: 60px;
+}
+
+.sort-item-button-up {
+  margin-left: 10px;
+}
+
+.sort-item-button-down {
+  margin-left: 15px;
 }
 
 .catalog-filter-button {
@@ -1427,14 +1452,30 @@ body {
 
 .sorting-header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 26px;
   margin-bottom: 26px;
 }
 
 .sort-item-button {
   text-decoration: none;
-  color: inherit;
+}
+
+.sort-item-button-image {
+  opacity: 0.2;
+}
+
+.sort-item-button:hover svg {
+  opacity: 0.5;
+}
+
+.sort-item-button:active svg {
+  opacity: 1.0;
+}
+
+.sort-item-button:focus-visible {
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .filter-container {
@@ -1468,10 +1509,46 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 452px;
+  position: relative;
 }
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-card-link-button {
+  position: absolute;
+  width: 220px;
+  height: 40px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  right: 75px;
+  top: 180px;
+  z-index: 3;
+  display: none;
+  pointer-events: none;
+}
+
+.product-card-link-button p {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.card-button-decorate {
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #ffe17f;
+  right: 75px;
+  top: 195px;
+  z-index: 2;
+  display: none;
+  pointer-events: none;
 }
 
 .card-img-header {
@@ -1498,6 +1575,33 @@ body {
   line-height: 21px;
   color: #444444;
   display: inline;
+}
+
+.product-card-new-image {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
+.product-card-link:hover {
+  opacity: 0.6;
+}
+
+.product-card:hover .product-card-link-button {
+  display: block;
+}
+
+.product-card:hover .card-button-decorate {
+  display: block;
+}
+
+.product-card:active .card-button-decorate{
+  background-color: #ffc700;
+}
+
+.product-card-link:focus-visible {
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .product-card-download-button {
