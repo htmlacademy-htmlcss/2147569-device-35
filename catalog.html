@@ -67,7 +67,7 @@
         </section>
         <nav class="navigation-header">
           <div tabindex="0" class="navigation-link-catalog">
-            <a class="navigation-link link-catalog" href="#">
+            <a class="navigation-link link-catalog" href="#" tabindex="-1">
               <p>Каталог товаров</p><svg aria-hidden="true" focusable="false" class="navigation-catalog-button-img"
                 width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle opacity="" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
@@ -101,8 +101,32 @@
         <h1 class="breadcrumbs-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1"><svg
+                xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
+                <g clip-path="url(#a)" opacity=".2">
+                  <path fill="#000"
+                    d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .5h4v7H0z" />
+                  </clipPath>
+                </defs>
+              </svg></a></li>
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="catalog.html">Каталог товаров</a>
           </li>
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1"><svg
+                xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
+                <g clip-path="url(#a)" opacity=".2">
+                  <path fill="#000"
+                    d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .5h4v7H0z" />
+                  </clipPath>
+                </defs>
+              </svg></a></li>
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#">Моноподы для селфи</a></li>
         </ul>
       </section>
@@ -159,13 +183,37 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="sorting">
-                <a href="#" class="sort-item-button">u</a>
-                <a href="#" class="sort-item-button">d</a>
+                <a href="#" class="sort-item-button sort-item-button-up"><svg class="sort-item-button-image"
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                    <g clip-path="url(#a)" opacity="">
+                      <path fill="#000" d="m6 0 5.5 10H.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.5 0h11v10H.5z" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
+                <a href="#" class="sort-item-button sort-item-button-down"><svg class="sort-item-button-image"
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                    <g clip-path="url(#a)" opacity="">
+                      <path fill="#000" d="M6 10 .5 0h11" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M11.5 10H.5V0h11z" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
               </div>
             </div>
             <div class="product-list-window">
               <ul class="product-list">
                 <li class="product-card">
+                  <div class="product-card-link-button">
+                    <p>Подробнее</p>
+                  </div>
+                  <div class="card-button-decorate"></div>
                   <a class="product-card-link" href="#">
                     <img class="product-card-img" src="images/catalog/product/amateur-selfie-stick.jpg" width="360"
                       height="380" alt="Любительская селфи палка">
@@ -173,9 +221,20 @@
                       <h4 class="card-img-header">Любительская<br>селфи-палка</h4>
                       <p class="card-img-price">500 ₽</p>
                     </div>
+                    <svg class="product-card-new-image" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6" stroke-width="2" />
+                      <path
+                        d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
+                        fill="black" fill-opacity="0.6" />
+                    </svg>
                   </a>
                 </li>
                 <li class="product-card">
+                  <div class="product-card-link-button">
+                    <p>Подробнее</p>
+                  </div>
+                  <div class="card-button-decorate"></div>
                   <a class="product-card-link" href="#">
                     <img class="product-card-img" src="images/catalog/product/professional-selfie-stick.jpg" width="360"
                       height="380" alt="Проффесиональная селфи палка">
@@ -183,9 +242,20 @@
                       <h4 class="card-img-header">Проффесиональная<br>селфи-палка</h4>
                       <p class="card-img-price">1 500 ₽</p>
                     </div>
+                    <svg class="product-card-new-image" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6" stroke-width="2" />
+                      <path
+                        d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
+                        fill="black" fill-opacity="0.6" />
+                    </svg>
                   </a>
                 </li>
                 <li class="product-card">
+                  <div class="product-card-link-button">
+                    <p>Подробнее</p>
+                  </div>
+                  <div class="card-button-decorate"></div>
                   <a class="product-card-link" href="#">
                     <img class="product-card-img" src="images/catalog/product/unsinkable-selfie-stick.jpg" width="360"
                       height="380" alt="Непотопляемая селфи палка">
@@ -193,9 +263,19 @@
                       <h4 class="card-img-header">Непотопляемая<br>селфи-палка</h4>
                       <p class="card-img-price">2 500 ₽</p>
                     </div>
+                    <!--
+                    <svg class="product-card-new-image" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6" stroke-width="2"/>
+                      <path d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z" fill="black" fill-opacity="0.6"/>
+                    </svg>
+                    -->
                   </a>
                 </li>
                 <li class="product-card">
+                  <div class="product-card-link-button">
+                    <p>Подробнее</p>
+                  </div>
+                  <div class="card-button-decorate"></div>
                   <a class="product-card-link" href="#">
                     <img class="product-card-img" src="images/catalog/product/selfie-stick-follow-me.jpg" width="360"
                       height="380" alt="Селфи палка &#8243; Следуй за мной &#8243;">
@@ -203,6 +283,12 @@
                       <h4 class="card-img-header">Селфи-палка &#8243; Следуй<br>за мной &#8243; </h4>
                       <p class="card-img-price">1 500 ₽</p>
                     </div>
+                    <!--
+                    <svg class="product-card-new-image" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6" stroke-width="2"/>
+                      <path d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z" fill="black" fill-opacity="0.6"/>
+                    </svg>
+                    -->
                   </a>
                 </li>
               </ul>
