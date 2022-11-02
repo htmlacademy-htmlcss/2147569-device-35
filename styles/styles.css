@@ -1605,30 +1605,50 @@ body {
 }
 
 .product-card-download-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-download-container {
+  border: 3px solid #E5E5E5;
+  width: 755px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.product-card-download-container p {
   font-family: "Raleway", Tahoma, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.product-card-download {
-  border: 3px solid #E5E5E5;
-  width: 755px;
-  height: 55px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 44px;
 }
 
 .pagination-number {
   width: 200px;
   display: flex;
   justify-content: space-between;
+}
+
+.product-card-download-container:hover {
+  border: 3px solid black;
+}
+
+.product-card-download-container:active {
+  opacity: 0.3;
+}
+
+.product-card-download-container:focus-visible {
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.product-card-download-container:disabled {
+  opacity: 0.2;
 }
 
 .pagination-container {
@@ -1640,12 +1660,55 @@ body {
   align-items: center;
 }
 
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pagination-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #444444;
   opacity: 0.3;
+  display: block;
+}
+
+.pagination-link-container {
+  height: 71px;
+}
+
+.pagination-link-container:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-link-container:active a{
+  opacity: 0.3;
+}
+
+.pagination-link-container:focus-visible{
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.pagination-link-current-page {
+  opacity: 0.6;
+}
+
+.pagination-link-number:hover {
+  opacity: 1.0;
+}
+
+.pagination-link-number:active {
+  opacity: 0.1;
+}
+
+.pagination-item:focus-visible {
+  box-shadow:  0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .pagination-prev {
