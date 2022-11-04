@@ -56,21 +56,21 @@ body {
   bottom: 20px;
 }
 
-.img-header-logo {
+.header-logo-link {
   margin-bottom: 30px;
   display: block;
   width: 145px;
 }
 
-.img-header-logo:hover svg {
+.header-logo-link:hover .header-logo-img {
   opacity: 0.6;
 }
 
-.img-header-logo:active svg {
+.header-logo-link:active .header-logo-img {
   opacity: 0.3;
 }
 
-.img-header-logo:focus-visible {
+.header-logo-link:focus-visible {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -144,7 +144,7 @@ body {
 
 .user-basket-number-of-products {
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 14px;
   line-height: 17px;
   padding: 2px 7px;
@@ -236,11 +236,11 @@ body {
   margin-right: 0;
 }
 
-.navigation-link-services:hover a {
+.navigation-link-services:hover .link-services {
   opacity: 0.6;
 }
 
-.navigation-link-services:active a {
+.navigation-link-services:active .link-services {
   opacity: 0.3;
 }
 
@@ -293,25 +293,20 @@ body {
   bottom: 350px;
 }
 
-.slider-image-prev-button {
+.slider-prev-button ,.slider-next-button {
   width: 20px;
   height: 60px;
 }
 
-.slider-image-next-button {
-  width: 20px;
-  height: 60px;
-}
-
-.slider-image:hover svg{
+.slider-prev-button:hover .slider-prev-button-image,.slider-next-button:hover .slider-next-button-image {
   opacity: 0.6;
 }
 
-.slider-image:active svg{
+.slider-prev-button:active .slider-prev-button-image,.slider-next-button:active .slider-next-button-image {
   opacity: 0.3;
 }
 
-.slider-image:focus-visible {
+.slider-prev-button:focus-visible ,.slider-next-button:focus-visible {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -441,7 +436,7 @@ body {
   margin: 0;
 }
 
-.slider-image-pagination-container{
+.slider-pagination-container{
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -450,19 +445,31 @@ body {
   bottom: 36%;
 }
 
-.slider-image-pagination-button {
+.slider-pagination-button {
   line-height: 0;
 }
 
-.slider-image-pagination-button:hover svg {
+.slider-pagination-button-container {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-pagination-current {
+  background-color: #000000;
+}
+
+.slider-pagination-button-container:hover {
   opacity: 0.6;
 }
 
-.slider-image-pagination-button:active svg {
+.slider-pagination-button-container:active {
   opacity: 0.3;
 }
 
-.slider-image-pagination-button:focus-visible {
+.slider-pagination-button:focus-visible {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -723,11 +730,11 @@ body {
 }
 
 .delivery-block-logo-image {
-   margin: 35px 39px 34px 39px;
+   margin: 35px 39px;
 }
 
 .block-logo-strong-image {
-  margin: 30px 42px 30px 42px;
+  margin: 30px 42px;
   opacity: 0.3;
 }
 
@@ -1133,20 +1140,20 @@ body {
   position: relative;
 }
 
-.img-header-footer {
+.footer-logo-link {
   margin-bottom: 35px;
   width: 145px;
 }
 
-.img-header-footer:hover svg {
+.footer-logo-link:hover .footer-logo-img {
   opacity: 0.6;
 }
 
-.img-header-footer:active svg {
+.footer-logo-link:active .footer-logo-img {
   opacity: 0.3;
 }
 
-.img-header-footer:focus-visible {
+.footer-logo-link:focus-visible {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -1179,15 +1186,15 @@ body {
   justify-content: center;
 }
 
-.footer-social-list-item:hover div {
+.footer-social-list-item:hover .button-social-list-container {
   background-color: #ffc700;
 }
 
-.footer-social-list-item:active svg {
+.footer-social-list-item:active .social-list-image {
   opacity: 0.3;
 }
 
-.button-social-list:focus{
+.button-social-list:focus {
   outline: none;
 }
 
@@ -1520,7 +1527,7 @@ body {
   position: absolute;
   width: 220px;
   height: 40px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', Tahoma, sans-serif;
   font-style: normal;
   font-weight: 800;
   text-align: center;
@@ -1534,7 +1541,7 @@ body {
   pointer-events: none;
 }
 
-.product-card-link-button p {
+.product-card-button-header {
   margin: 0;
   margin-top: 5px;
 }
@@ -1618,7 +1625,7 @@ body {
   margin-bottom: 44px;
 }
 
-.product-card-download-container p {
+.card-download-button-header {
   font-family: "Raleway", Tahoma, sans-serif;
   font-style: normal;
   font-weight: 800;
