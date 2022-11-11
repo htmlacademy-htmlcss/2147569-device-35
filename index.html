@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин "Девайс"</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
   </head>
 
   <body>
@@ -29,11 +30,11 @@
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                   fill="#000" />
               </svg>
-              <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
+              <label>
+                <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
+              </label>
             </div>
-            <button class="button-search" type="submit">
-              <p class="button-search-header">Найти</p>
-            </button>
+            <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="header-login-compare-basket">
             <li class="button-user-menu-item">
@@ -52,8 +53,8 @@
                   <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000" />
                 </svg>Сравнить</a>
             </li>
-            <li class="button-user-menu-basket-popover" tabindex="0">
-              <a class="button-user-basket" href="#" tabindex="-1">
+            <li class="button-user-menu-basket-popover">
+              <a class="button-user-basket" href="#">
                 <span class="user-basket-number-of-products">2</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon navigation-icon-basket"
                   aria-hidden="true" focusable="false" width="16" height="14" fill="none">
@@ -70,68 +71,64 @@
                 </svg> Корзина
               </a>
               <div class="basket-popover">
-                <div class="card-product-basket-container">
-                  <div class="card-product-basket">
+                <ul class="card-product-basket-container">
+                  <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
                       <img class="card-product-basket-image" src="images/index/popover/amateur-selfie-stick-basket.jpg"
                         alt="Любительская селфи-палка" width="39px" height="43px">
                       <p class="card-product-basket-name">Любительская <br> селфи-палка</p>
                     </a>
-                    <button class="card-product-basket-delete"></button>
-                  </div>
-                  <div class="card-product-basket">
+                    <button class="card-product-basket-delete"><span class="visually-hidden">Удалить
+                        продукт</span></button>
+                  </li>
+                  <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
                       <img class="card-product-basket-image"
                         src="images/index/popover/professional-selfie-stick-basket.jpg"
                         alt="Профессиональная селфи-палка" width="39px" height="43px">
                       <p class="card-product-basket-name"> Профессиональная <br> селфи-палка</p>
                     </a>
-                    <button class="card-product-basket-delete"></button>
-                  </div>
-                </div>
+                    <button class="card-product-basket-delete"><span class="visually-hidden">Удалить
+                        продукт</span></button>
+                  </li>
+                </ul>
                 <div class="total-number-price-basket-container">
                   <p class="total-number">Товаров: <span class="number-of-products">2</span></p>
                   <p class="total-price">Сумма: <span class="price-of-products">2000 ₽</span></p>
                 </div>
                 <div class="open-basket-container">
-                  <button class="open-basket-button" type="button">
-                    <p class="open-basket-button-header">Открыть корзину</p>
-                  </button>
+                  <button class="open-basket-button" type="button"> Открыть корзину </button>
                 </div>
               </div>
             </li>
           </ul>
         </section>
         <nav class="navigation-header">
-          <div tabindex="0" class="navigation-link-catalog">
-            <a class="navigation-link link-catalog" href="#" tabindex="-1">
-              <p>Каталог товаров</p><svg aria-hidden="true" focusable="false" class="navigation-catalog-button-img"
-                width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity="" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
-                <g opacity="" clip-path="url(#clip0_32317_601)">
-                  <path class="link-catalog-open" d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black" />
-                  <path class="link-catalog-close" d="M33 24H17V26H33V24Z" fill="black" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_32317_601">
-                    <rect width="16" height="16" fill="white" transform="translate(17 17)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+          <a class="navigation-link link-catalog" href="#">Каталог товаров</a>
+          <div class="navigation-link-catalog">
+            <button type="button" class="navigation-catalog-button-img"><span class="visually-hidden">Кнопка открытия
+                каталога</span></button>
+            <div class="button-catalog-open"><span class="visually-hidden">Открыть окно каталога</span></div>
+            <div class="button-catalog-close"><span class="visually-hidden">Закрыть окно каталога</span></div>
             <div class="subcatalog">
-              <div class="subcatalog-product-container">
-                <a href="#" class="subcatalog-product-container-link">Виртуальная реальность</a>
-                <a href="#" class="subcatalog-product-container-link">Моноподы для cелфи</a>
-                <a href="#" class="subcatalog-product-container-link">Экшн-камеры</a>
-              </div>
-              <div class="subcatalog-product-container">
-                <a href="#" class="subcatalog-product-container-link">Фитнес-браслеты</a>
-                <a href="#" class="subcatalog-product-container-link">Умные часы</a>
-              </div>
-              <div class="subcatalog-product-container">
-                <a href="#" class="subcatalog-product-container-link">Квадрокоптеры</a>
-              </div>
+              <ul class="subcatalog-product-container">
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Виртуальная реальность</a> </li>
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Моноподы для cелфи</a> </li>
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Экшн-камеры</a> </li>
+              </ul>
+              <ul class="subcatalog-product-container">
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Фитнес-браслеты</a> </li>
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Умные часы</a> </li>
+              </ul>
+              <ul class="subcatalog-product-container">
+                <li class="subcatalog-product-container-item"> <a href="#"
+                    class="subcatalog-product-container-link">Квадрокоптеры</a> </li>
+              </ul>
             </div>
           </div>
           <ul class="navigation-list">
@@ -151,11 +148,17 @@
     <main class="main-index main-container">
       <div class="slider container">
         <div class="slider-container-image">
-          <img src="images/index/slaider/slaider-img.png" class="slider-image" width="560" height="560"
-            alt="Квадрокоптер">
+          <img src="images/index/slaider/slaider-img-quadrocopter.png" class="slider-image slider-image-quadrocopter"
+            width="560" height="560" alt="Квадрокоптер">
+          <img src="images/index/slaider/slider-img-switch.png" class="slider-image slider-image-switch" width="560"
+            height="560" alt="Часы">
+          <img src="images/index/slaider/slider-img-selfie-stick.png" class="slider-image slider-image-selfie-stick"
+            width="560" height="560" alt="Селфи палка">
           <div class="container-image-button">
-            <button class="slider-prev-button" type="button"> </button>
-            <button class="slider-next-button" type="button"> </button>
+            <button class="slider-prev-button" type="button"><span class="visually-hidden">Предыдущий
+                слайдер</span></button>
+            <button class="slider-next-button" type="button"><span class="visually-hidden">Следующий
+                слайдер</span></button>
           </div>
         </div>
         <section class="slider-product-description">
@@ -181,15 +184,10 @@
             </div>
           </div>
           <div class="slider-pagination-container">
-            <a class="slider-pagination-button" href="#">
-              <div class="slider-pagination-button-container slider-pagination-current"></div>
-            </a>
-            <a class="slider-pagination-button" href="#">
-              <div class="slider-pagination-button-container"></div>
-            </a>
-            <a class="slider-pagination-button" href="#">
-              <div class="slider-pagination-button-container"></div>
-            </a>
+            <a class="slider-pagination-button slider-pagination-current" href="#"><span class="visually-hidden">Текущий
+                слайдер</span></a>
+            <a class="slider-pagination-button" href="#"><span class="visually-hidden">Второй слайдер</span></a>
+            <a class="slider-pagination-button" href="#"><span class="visually-hidden">Третий слайдер</span></a>
           </div>
         </section>
       </div>
@@ -389,7 +387,10 @@
           <div class="newsletter-email-chek container">
             <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
               <div class="newsletter-form-field-container" tabindex="0">
-                <input class="newsletter-form-field" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
+                <label>
+                  <input class="newsletter-form-field" type="email" name="newsletter-email" placeholder="Ваш e-mail"
+                    required>
+                </label>
               </div>
               <button class="button-newsletter" type="submit">
                 <p class="button-newsletter-header"> Подписаться </p>
@@ -481,7 +482,8 @@
       <div class="modal modal-order">
         <div class="modal-title-close-container">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <button class="modal-close-button" type="button"></button>
+          <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть модальное
+              окно</span></button>
         </div>
         <form action="#" method="post" class="modal-form">
           <div class="modal-group-container">
