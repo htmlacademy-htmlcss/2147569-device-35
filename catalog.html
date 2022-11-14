@@ -22,17 +22,16 @@
         </a>
         <section class="header-user-menu">
           <form class="user-menu-form-search" action="#" method="get">
-            <div class="user-menu-form-search-container" tabindex="0">
+            <label class="user-menu-form-search-container" tabindex="0">
+              <span class="visually-hidden">Окно поиска</span>
               <svg aria-hidden="true" focusable="false" class="navigation-icon-search" width="16" height="16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                   fill="#000" />
               </svg>
-              <label>
-                <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
-              </label>
-            </div>
+              <input type="search" name="search" class="input-user-menu-search" placeholder="Текст поиска">
+            </label>
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="header-login-compare-basket">
@@ -66,24 +65,23 @@
                       <path fill="#fff" d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
-                </svg>
                 </svg> Корзина
               </a>
               <div class="basket-popover">
                 <ul class="card-product-basket-container">
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image" src="images/index/popover/amateur-selfie-stick-basket.jpg"
-                        alt="Любительская селфи-палка" width="39px" height="43px">
+                      <img class="card-product-basket-image" width="39px" height="43px"
+                        src="images/index/popover/amateur-selfie-stick-basket.jpg" alt="Любительская селфи-палка">
                       <p class="card-product-basket-name">Любительская <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"></button>
                   </li>
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image"
+                      <img class="card-product-basket-image" width="39px" height="43px"
                         src="images/index/popover/professional-selfie-stick-basket.jpg"
-                        alt="Профессиональная селфи-палка" width="39px" height="43px">
+                        alt="Профессиональная селфи-палка">
                       <p class="card-product-basket-name"> Профессиональная <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"></button>
@@ -154,7 +152,7 @@
                     d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="">
                     <path fill="#fff" d="M0 .5h4v7H0z" />
                   </clipPath>
                 </defs>
@@ -168,7 +166,7 @@
                     d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="">
                     <path fill="#fff" d="M0 .5h4v7H0z" />
                   </clipPath>
                 </defs>
@@ -205,8 +203,8 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title"> Цвет </legend>
+              <fieldset class="catalog-filter-group catalog-filter-group-color">
+                <legend class="catalog-filter-title catalog-filter-title-color"> Цвет </legend>
                 <ul class="catalog-filter-list">
                   <li>
                     <label class="control">
@@ -245,7 +243,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-bluetooth">
                 <legend class="catalog-filter-title"> Bluetooth </legend>
                 <ul class="catalog-filter-list">
                   <li>
@@ -284,7 +282,7 @@
                       <path fill="#000" d="m6 0 5.5 10H.5" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="">
                         <path fill="#fff" d="M.5 0h11v10H.5z" />
                       </clipPath>
                     </defs>
@@ -295,7 +293,7 @@
                       <path fill="#000" d="M6 10 .5 0h11" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="">
                         <path fill="#fff" d="M11.5 10H.5V0h11z" />
                       </clipPath>
                     </defs>
@@ -375,7 +373,7 @@
                     <img class="product-card-img" src="images/catalog/product/selfie-stick-follow-me.jpg" width="360"
                       height="380" alt="Селфи палка &#8243; Следуй за мной &#8243;">
                     <div class="product-card-info">
-                      <h4 class="card-img-header">Селфи-палка &#8243; Следуй<br>за мной &#8243; </h4>
+                      <h4 class="card-img-header">Селфи-палка &#171; Следуй<br>за мной &#187; </h4>
                       <p class="card-img-price">1 500 ₽</p>
                     </div>
                     <!--Пометка нового товара
@@ -387,11 +385,7 @@
                   </a>
                 </li>
               </ul>
-              <a href="#" class="product-card-download-button" tabindex="-1">
-                <div class="product-card-download-container" tabindex="0">
-                  <p class="card-download-button-header"> Загрузить еще </p>
-                </div>
-              </a>
+              <button class="product-card-download-button" type="button">Загрузить ещё</button>
               <div class="pagination-container">
                 <div class="pagination-link-container" tabindex="0">
                   <a class="pagination-link pagination-prev" href="#" tabindex="-1">Назад</a>
@@ -410,7 +404,7 @@
                       tabindex="-1">15</a> </li>
                 </ul>
                 <div class="pagination-link-container" tabindex="0">
-                  <a class="pagination-link pagination-next" href="#" tabindex="-1">Вперед</a>
+                  <a class="pagination-link pagination-next" href="#" tabindex="-1">Вперёд</a>
                 </div>
               </div>
             </div>
@@ -452,7 +446,7 @@
                           d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath id="">
                           <path fill="#fff" d="M0 0h14v12H0z" />
                         </clipPath>
                       </defs>
