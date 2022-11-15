@@ -455,7 +455,7 @@ body {
   position: relative;
 }
 
-/* Отметка текущей страницы
+
 .subcatalog-product-container-link::after {
   content: "";
   position: absolute;
@@ -464,8 +464,9 @@ body {
   background-color: #000000;
   bottom: 0;
   left: 0;
+  display: none;
 }
-*/
+
 
 .subcatalog-product-container-link:hover {
   opacity: 0.6;
@@ -611,7 +612,7 @@ body {
   padding: 5px 0;
 }
 
-/* Отметка текущей страницы
+
 .link-services::after {
   content: "";
   position: absolute;
@@ -620,8 +621,9 @@ body {
   background-color: #000000;
   bottom: 0;
   left: 0;
+  display: none;
 }
-*/
+
 
 .main-container {
   flex-grow: 1;
@@ -1778,7 +1780,7 @@ body {
   outline: none;
 }
 
-/* Отметка текущей страницы
+
 .footer-services-link:hover::after {
   content: "";
   position: absolute;
@@ -1787,8 +1789,9 @@ body {
   background-color: #ffc700;
   bottom: -5px;
   left: 0;
+  display: none;
 }
-*/
+
 
 .footer-tel {
   font-size: 16px;
