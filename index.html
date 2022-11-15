@@ -23,17 +23,16 @@
         </a>
         <section class="header-user-menu">
           <form class="user-menu-form-search" action="#" method="get">
-            <div class="user-menu-form-search-container" tabindex="0">
+            <label class="user-menu-form-search-container" tabindex="0">
+              <span class="visually-hidden">Окно поиска</span>
               <svg aria-hidden="true" focusable="false" class="navigation-icon-search" width="16" height="16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                   fill="#000" />
               </svg>
-              <label>
-                <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
-              </label>
-            </div>
+              <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
+            </label>
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="header-login-compare-basket">
@@ -68,14 +67,14 @@
                     </clipPath>
                   </defs>
                 </svg>
-                </svg> Корзина
+                Корзина
               </a>
               <div class="basket-popover">
                 <ul class="card-product-basket-container">
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image" src="images/index/popover/amateur-selfie-stick-basket.jpg"
-                        alt="Любительская селфи-палка" width="39px" height="43px">
+                      <img class="card-product-basket-image" width="39" height="43"
+                        src="images/index/popover/amateur-selfie-stick-basket.jpg" alt="Любительская селфи-палка">
                       <p class="card-product-basket-name">Любительская <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"><span class="visually-hidden">Удалить
@@ -83,9 +82,9 @@
                   </li>
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image"
+                      <img class="card-product-basket-image" width="39" height="43"
                         src="images/index/popover/professional-selfie-stick-basket.jpg"
-                        alt="Профессиональная селфи-палка" width="39px" height="43px">
+                        alt="Профессиональная селфи-палка">
                       <p class="card-product-basket-name"> Профессиональная <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"><span class="visually-hidden">Удалить
@@ -104,7 +103,7 @@
           </ul>
         </section>
         <nav class="navigation-header">
-          <a class="navigation-link link-catalog" href="#">Каталог товаров</a>
+          <a class="navigation-link link-catalog" href="catalog.html">Каталог товаров</a>
           <div class="navigation-link-catalog">
             <button type="button" class="navigation-catalog-button-img"><span class="visually-hidden">Кнопка открытия
                 каталога</span></button>
@@ -162,24 +161,52 @@
           </div>
         </div>
         <section class="slider-product-description">
-          <p class="slider-product-number">01</p>
+          <span class="slider-product-number slider-product-number-quadrocopter">01</span>
+          <span class="slider-product-number slider-product-number-switch">02</span>
+          <span class="slider-product-number slider-product-number-selfie-stick">03</span>
           <div class="slider-product-description-container">
-            <h2 class="slider-header">Порхает как бабочка,
+            <h2 class="slider-header slider-header-quadrocopter">Порхает как бабочка,
               жалит как пчела!</h2>
-            <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            <h2 class="slider-header slider-header-switch">Худеем <br>
+              правильно!</h2>
+            <h2 class="slider-header slider-header-selfie-stick">Делай селфи, <br>
+              как Бен Стиллер!</h2>
+            <p class="product-description product-description-quadrocopter">Этот обычный, на первый взгляд, квадрокоптер
+              оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
+            <p class="product-description product-description-switch">Мотивирующие фитнес-браслеты помогут найти в себе
+              силы не пропускать занятия и соблюдать диету.
+            </p>
+            <p class="product-description product-description-selfie-stick">Самая длинная палка для селфи доступна в
+              нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <div class="slider-description-button-container" tabindex="0">
               <a class="button-slider-description" href="#" tabindex="-1">Подробнее</a>
             </div>
             <div class="slider-product-feature-value-container">
-              <div class="slider-product-feature-value-container-item">
+              <div class="slider-product-feature-value-container-item slider-value-container-quadrocopter">
                 <p class="slider-product-value">800 м</p>
                 <p class="slider-product-feature"> Дальность полета</p>
               </div>
-              <div class="slider-product-feature-value-container-item">
+              <div class="slider-product-feature-value-container-item slider-value-container-quadrocopter">
                 <p class="slider-product-value">50 м </p>
                 <p class="slider-product-feature"> Радиус поражения </p>
+              </div>
+              <div class="slider-product-feature-value-container-item slider-value-container-switch">
+                <p class="slider-product-value">48 часов</p>
+                <p class="slider-product-feature"> Без подзарядки </p>
+              </div>
+              <div class="slider-product-feature-value-container-item slider-value-container-selfie-stick">
+                <p class="slider-product-value">8,5 м</p>
+                <p class="slider-product-feature">Длина палки</p>
+              </div>
+              <div class="slider-product-feature-value-container-item slider-value-container-selfie-stick">
+                <p class="slider-product-value">5 кг</p>
+                <p class="slider-product-feature">Вес палки</p>
+              </div>
+              <div class="slider-product-feature-value-container-item slider-value-container-selfie-stick">
+                <p class="slider-product-value">Карбон</p>
+                <p class="slider-product-feature">Материал</p>
               </div>
             </div>
           </div>
@@ -285,28 +312,35 @@
         <div class="services-container container">
           <h2 class="visually-hidden">Сервисы</h2>
           <div class="button-services">
-            <div class="button-services-delivery-container" tabindex="0">
-              <a class="button-services-item button-services-delivery" href="#" tabindex="-1">Доставка</a>
-            </div>
-            <div class="button-services-guarantee-container" tabindex="0">
-              <a class="button-services-item button-services-guarantee" href="#" tabindex="-1">Гарантия</a>
-              <div class="button-services-guarantee-decorate"></div>
-            </div>
-            <div class="button-services-credit-container" tabindex="0">
-              <a class="button-services-item button-services-credit" href="#" tabindex="-1">Кредит</a>
-              <div class="button-services-credit-decorate"></div>
-            </div>
-            <div class="button-services-decorate"> </div>
+            <button class="button-services-item button-services-current" type="button">Доставка</button>
+            <div class="button-services-delivery-decorate"></div>
+            <button class="button-services-item" type="button">Гарантия</button>
+            <div class="button-services-guarantee-decorate"></div>
+            <button class="button-services-item" type="button">Кредит</button>
+            <div class="button-services-credit-decorate"></div>
+            <div class="button-services-decorate"></div>
           </div>
           <div class="header-description-logo">
             <div class="services-header-description">
-              <h3 class="services-header-delivery">Доставка</h3>
-              <p class="services-header-delivery-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему
+              <h3 class="services-header services-header-delivery">Доставка</h3>
+              <h3 class="services-header services-header-guarantee">Гарантия</h3>
+              <h3 class="services-header services-header-credit">Кредит</h3>
+              <p class="services-description services-description-delivery">Мы с удовольствием доставим ваш товар прямо
+                <br> к вашему
                 подъезду
                 совершенно бесплатно! Ведь <br> мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
+                заработаем, поднимая его на ваш этаж.
+              </p>
+              <p class="services-description services-description-guarantee">Если из-за возгорания купленного у нас
+                товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+              <p class="services-description services-description-credit">Залезть в долговую яму стало проще! Кредитные
+                консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </div>
-            <div class="header-description-logo-image"> </div>
+            <div class="header-description-logo-image-delivery"></div>
+            <div class="header-description-logo-image-guarantee"></div>
+            <div class="header-description-logo-image-credit"></div>
           </div>
         </div>
       </section>
@@ -390,11 +424,10 @@
                 <label>
                   <input class="newsletter-form-field" type="email" name="newsletter-email" placeholder="Ваш e-mail"
                     required>
+                  <span class="visually-hidden">Окно ввода электронной почты</span>
                 </label>
               </div>
-              <button class="button-newsletter" type="submit">
-                <p class="button-newsletter-header"> Подписаться </p>
-              </button>
+              <button class="button-newsletter" type="submit"> Подписаться </button>
             </form>
             <svg class="newsletter-chek-logo" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.5 0 4.9 9.3.5 5v4.7L5 14l9.5-9.3V0Z" fill="#08AF00" />
@@ -433,16 +466,12 @@
                 <a class="button-social-list" href="https://t.me/htmlacademy" tabindex="-1">
                   <div class="button-social-list-container"> <svg class="social-list-image"
                       xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none">
-                      <g clip-path="url(#a)">
+                      <g>
                         <path fill="#444"
                           d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z" />
                       </g>
-                      <defs>
-                        <clipPath id="a">
-                          <path fill="#fff" d="M0 0h14v12H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg> </div>
+                    </svg>
+                  </div>
                 </a>
               </li>
               <li class="footer-social-list-item" tabindex="0">

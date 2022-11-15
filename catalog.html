@@ -22,17 +22,16 @@
         </a>
         <section class="header-user-menu">
           <form class="user-menu-form-search" action="#" method="get">
-            <div class="user-menu-form-search-container" tabindex="0">
+            <label class="user-menu-form-search-container" tabindex="0">
+              <span class="visually-hidden">Окно поиска</span>
               <svg aria-hidden="true" focusable="false" class="navigation-icon-search" width="16" height="16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                   fill="#000" />
               </svg>
-              <label>
-                <input type="search" name="search" class="input-user-menu-search" placeholder="Поиск по сайту">
-              </label>
-            </div>
+              <input type="search" name="search" class="input-user-menu-search" placeholder="Текст поиска">
+            </label>
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="header-login-compare-basket">
@@ -66,24 +65,23 @@
                       <path fill="#fff" d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
-                </svg>
                 </svg> Корзина
               </a>
               <div class="basket-popover">
                 <ul class="card-product-basket-container">
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image" src="images/index/popover/amateur-selfie-stick-basket.jpg"
-                        alt="Любительская селфи-палка" width="39px" height="43px">
+                      <img class="card-product-basket-image" width="39" height="43"
+                        src="images/index/popover/amateur-selfie-stick-basket.jpg" alt="Селфи-палка любительская">
                       <p class="card-product-basket-name">Любительская <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"></button>
                   </li>
                   <li class="card-product-basket">
                     <a class="card-product-basket-link" href="#">
-                      <img class="card-product-basket-image"
+                      <img class="card-product-basket-image" width="39" height="43"
                         src="images/index/popover/professional-selfie-stick-basket.jpg"
-                        alt="Профессиональная селфи-палка" width="39px" height="43px">
+                        alt="Селфи-палка профессиональная">
                       <p class="card-product-basket-name"> Профессиональная <br> селфи-палка</p>
                     </a>
                     <button class="card-product-basket-delete"></button>
@@ -147,32 +145,26 @@
         <h1 class="breadcrumbs-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="index.html">Главная</a></li>
-          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1"><svg
-                xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
-                <g clip-path="url(#a)" opacity=".2">
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
+                <g opacity=".2">
                   <path fill="#000"
                     d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
                 </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 .5h4v7H0z" />
-                  </clipPath>
-                </defs>
-              </svg></a></li>
+              </svg>
+            </a>
+          </li>
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1"><svg
-                xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
-                <g clip-path="url(#a)" opacity=".2">
+          <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#" tabindex="-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="8" fill="none">
+                <g opacity=".2">
                   <path fill="#000"
                     d="m3.8 3.6-3-3C.6.4.3.4.1.6c-.1.2-.1.6 0 .8L2.7 4 .1 6.6c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
                 </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 .5h4v7H0z" />
-                  </clipPath>
-                </defs>
-              </svg></a></li>
+              </svg>
+            </a>
+          </li>
           <li class="breadcrumbs-list-item"> <a class="breadcrumbs-list-link" href="#">Моноподы для селфи</a></li>
         </ul>
       </section>
@@ -205,8 +197,8 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title"> Цвет </legend>
+              <fieldset class="catalog-filter-group catalog-filter-group-color">
+                <legend class="catalog-filter-title catalog-filter-title-color"> Цвет </legend>
                 <ul class="catalog-filter-list">
                   <li>
                     <label class="control">
@@ -245,7 +237,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-bluetooth">
                 <legend class="catalog-filter-title"> Bluetooth </legend>
                 <ul class="catalog-filter-list">
                   <li>
@@ -278,28 +270,22 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="sorting">
-                <a href="#" class="sort-item-button sort-item-button-up"><svg class="sort-item-button-image"
-                    xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                    <g clip-path="url(#a)" opacity="">
+                <a href="#" class="sort-item-button sort-item-button-up">
+                  <svg class="sort-item-button-image" xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                    fill="none">
+                    <g>
                       <path fill="#000" d="m6 0 5.5 10H.5" />
                     </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M.5 0h11v10H.5z" />
-                      </clipPath>
-                    </defs>
-                  </svg></a>
-                <a href="#" class="sort-item-button sort-item-button-down"><svg class="sort-item-button-image"
-                    xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                    <g clip-path="url(#a)" opacity="">
+                  </svg>
+                </a>
+                <a href="#" class="sort-item-button sort-item-button-down">
+                  <svg class="sort-item-button-image" xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                    fill="none">
+                    <g>
                       <path fill="#000" d="M6 10 .5 0h11" />
                     </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M11.5 10H.5V0h11z" />
-                      </clipPath>
-                    </defs>
-                  </svg></a>
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="product-list-window">
@@ -375,7 +361,7 @@
                     <img class="product-card-img" src="images/catalog/product/selfie-stick-follow-me.jpg" width="360"
                       height="380" alt="Селфи палка &#8243; Следуй за мной &#8243;">
                     <div class="product-card-info">
-                      <h4 class="card-img-header">Селфи-палка &#8243; Следуй<br>за мной &#8243; </h4>
+                      <h4 class="card-img-header">Селфи-палка &#171; Следуй<br>за мной &#187; </h4>
                       <p class="card-img-price">1 500 ₽</p>
                     </div>
                     <!--Пометка нового товара
@@ -387,11 +373,7 @@
                   </a>
                 </li>
               </ul>
-              <a href="#" class="product-card-download-button" tabindex="-1">
-                <div class="product-card-download-container" tabindex="0">
-                  <p class="card-download-button-header"> Загрузить еще </p>
-                </div>
-              </a>
+              <button class="product-card-download-button" type="button">Загрузить ещё</button>
               <div class="pagination-container">
                 <div class="pagination-link-container" tabindex="0">
                   <a class="pagination-link pagination-prev" href="#" tabindex="-1">Назад</a>
@@ -410,7 +392,7 @@
                       tabindex="-1">15</a> </li>
                 </ul>
                 <div class="pagination-link-container" tabindex="0">
-                  <a class="pagination-link pagination-next" href="#" tabindex="-1">Вперед</a>
+                  <a class="pagination-link pagination-next" href="#" tabindex="-1">Вперёд</a>
                 </div>
               </div>
             </div>
@@ -447,16 +429,12 @@
                 <a class="button-social-list" href="https://t.me/htmlacademy" tabindex="-1">
                   <div class="button-social-list-container"> <svg class="social-list-image"
                       xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none">
-                      <g clip-path="url(#a)">
+                      <g>
                         <path fill="#444"
                           d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z" />
                       </g>
-                      <defs>
-                        <clipPath id="a">
-                          <path fill="#fff" d="M0 0h14v12H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg> </div>
+                    </svg>
+                  </div>
                 </a>
               </li>
               <li class="footer-social-list-item" tabindex="0">
@@ -465,7 +443,8 @@
                       xmlns="http://www.w3.org/2000/svg" width="16" height="11" fill="none">
                       <path fill="#444"
                         d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z" />
-                    </svg></div>
+                    </svg>
+                  </div>
                 </a>
               </li>
               <li class="footer-social-list-item" tabindex="0">
@@ -474,7 +453,8 @@
                       xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none">
                       <path fill="#444"
                         d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
-                    </svg> </div>
+                    </svg>
+                  </div>
                 </a>
               </li>
             </ul>
