@@ -64,11 +64,24 @@ body {
   width: 145px;
 }
 
+.header-logo-img-index {
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
 .header-logo-link:hover .header-logo-img {
   opacity: 0.6;
 }
 
 .header-logo-link:active .header-logo-img {
+  opacity: 0.3;
+}
+
+.header-logo-img-index:hover {
+  opacity: 0.6;
+}
+
+.header-logo-img-index:active {
   opacity: 0.3;
 }
 
@@ -93,12 +106,13 @@ body {
 }
 
 .input-user-menu-search {
-  width: 310px;
-  border: none;
   background-color: #ffe17f;
   outline: none;
-  margin-left: 45px;
-  margin-top: 10px;
+  border: 2px solid #000000;
+  width: 359px;
+  height: 40px;
+  border-radius: 20px 0 0 20px;
+  padding-left: 46px;
 }
 
 .input-user-menu-search:disabled {
@@ -114,21 +128,16 @@ body {
   opacity: 0.5px;
 }
 
-.user-menu-form-search-container {
-  border: 2px solid #000000;
-  position: relative;
-  width: 359px;
-  border-radius: 20px 0 0 20px;
-}
 
 .user-menu-form-search-container:focus-visible {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
+  z-index: 1;
 }
 
 .navigation-icon-search {
   position: absolute;
-  top: 0;
+  top: -15px;
   bottom: 0;
   left: 15px;
   margin: auto 0;
@@ -211,6 +220,7 @@ body {
   padding: 0;
   background-color: #ffe17f;
   cursor: pointer;
+  height: 40px;
 }
 
 .button-search:hover {
@@ -222,7 +232,7 @@ body {
   color: rgb(255, 255, 255, 0.3);
 }
 
-.button-search:focus-visible {
+.user-menu-form-button-container:focus-visible {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -1019,15 +1029,15 @@ body {
 
 .button-services-current:hover {
   background-color: #000000;
-  padding-right: 75px;
+  padding-right: 71px;
 }
 
 .button-services-current:active {
-  padding-right: 75px;
+  padding-right: 71px;
 }
 
 .button-services-current:focus {
-  padding-right: 75px;
+  padding-right: 71px;
 }
 
 .button-services-current:focus-visible {
@@ -1582,6 +1592,7 @@ body {
   padding-left: 15px;
   margin: 0;
   border: none;
+  background-color: inherit;
   border-bottom: 3px solid #c4c4c4;
 }
 
@@ -1635,11 +1646,24 @@ body {
   width: 145px;
 }
 
+.footer-logo-img-index {
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+
 .footer-logo-link:hover .footer-logo-img {
   opacity: 0.6;
 }
 
 .footer-logo-link:active .footer-logo-img {
+  opacity: 0.3;
+}
+
+.footer-logo-img-index:hover {
+  opacity: 0.6;
+}
+
+.footer-logo-img-index:active {
   opacity: 0.3;
 }
 
@@ -2605,6 +2629,12 @@ body {
   padding-right: 65px;
 }
 
+.modal-group-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .modal-group-field:disabled {
   opacity: 0.1;
 }
@@ -2683,8 +2713,8 @@ body {
   width: 15px;
   height: 12px;
   background-image: url("/images/index/modal/modal-name-icon.svg");
-  right: 24px;
-  top: 24px;
+  right: 19px;
+  top: 23px;
 }
 
 .modal-email {
@@ -2697,8 +2727,8 @@ body {
   width: 15px;
   height: 12px;
   background-image: url("/images/index/modal/modal-email-icon.svg");
-  right: 24px;
-  top: 24px;
+  right: 19px;
+  top: 23px;
 }
 
 /* Валидация окна email
@@ -2768,7 +2798,7 @@ body {
   position: absolute;
   background-color: #ffe17f;
   border-radius: 50%;
-  top: -38px;
+  top: -37px;
   right: 32px;
   background-image: url("/images/index/modal/modal-block-strong-icon.svg");
   background-position: center;
